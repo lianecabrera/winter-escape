@@ -1,0 +1,354 @@
+/* Color Scheme
+White: #fffeff
+Creamy Pink: #ffe9e2
+Light Blue: #9ccbe3
+Dark Blue: #9fafcd
+Purple: #b09fda */
+
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,700');
+
+body {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #696969;
+    margin: 0;
+    padding: 0;
+    max-width: 1600px; 
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Text */
+
+h1 {
+    padding-top: 1em;
+    line-height: .1;
+    margin: 1em;
+    font-size: 3em;
+    font-weight: 500;
+    max-width: 500px;
+    text-transform: uppercase;
+}
+
+h2 {
+    margin: 0 0 .5em 0;
+    font-size: 1.6em;
+    font-weight: 700;
+    line-height: 1.1em;
+    text-transform: uppercase;
+    color: darkgray;
+}
+
+p {
+    margin: 1em;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+
+
+a {
+  text-decoration: none;
+    color: #9fafcd;
+}
+
+
+
+/* Header */
+.hero {
+  position: relative;
+  background: url(../images/header.jpg) no-repeat center fixed;
+    background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  min-height: 600px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.hero h1 {
+    padding: 200px 0;
+    max-width: 1600px;
+    width: 100%;
+    font-size: 3em;
+    line-height: 1.3;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.hero h1 span {
+  color: #fff;
+  border-bottom: 2px solid ;
+  padding-bottom: 12px;
+  line-height: 3;
+}
+
+
+
+#lodging {
+    background-image: url(../images/winterlodging.jpg);
+    background-position: 0px 100px;
+    background-repeat: repeat-x;
+    min-height: 350px; 
+}
+
+
+
+
+/* Section - Main */
+section {
+      overflow: auto;
+  margin: auto;
+    
+}
+
+section aside h2 {
+   text-align: center;
+    position: relative;
+     width: 40%;
+    float: left;
+}
+
+section aside p {
+    width: 55%;
+    float: left;
+     margin: 15px;
+}
+
+
+/* Navigation */
+
+.logo {
+  float: left;
+  margin-top: 0;
+  margin-bottom: 10px;
+    margin-left: 10px;
+    background: url(../images/logo.png) no-repeat 0;
+    background-size: contain;
+    width: 150px;
+    height: 70px;
+}
+
+
+.logo span {
+    display: none;
+}
+
+nav {
+    max-width: 1600px;
+    position: fixed;
+    top: 0px;
+    padding: 10px 0 0 0;
+    width: 100%;
+    background-color: rgba(176, 159, 218, 0.9);
+    opacity: 1;
+    top: 0px;
+    border-bottom: 1px solid gainsboro;
+}
+
+nav::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+nav ul {
+    list-style: none;
+    margin: 10px;
+    padding: 0px;
+}
+
+nav ul li:hover {
+    background-color: #9fafcd;
+}
+
+
+nav ul li a {
+    display: inline-block;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    width: 125px;
+    position: relative;
+}
+
+nav ul li a:visited {
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: #9fafcd;
+}
+
+/* Top Level */
+nav > ul {
+    padding-left: 200px;
+}
+
+nav > ul > li {
+    float: left;
+}
+
+nav > ul > li > a {
+    width: auto;
+    padding: 20px 20px 15px 20px;
+}
+
+
+
+
+
+footer {
+    font-size: .8em;
+    margin: 40px;
+    color: #9fafcd;
+    padding: 20px;
+}
+
+footer .content {
+    display: inline;
+}
+
+footer a {
+    margin-left: 30px;
+    color: #777;
+}
+
+footer a:visited {
+    color: #777;
+}
+
+footer a:hover {
+    color: #000;
+}
+
+/* Media Queries */
+
+@media screen and (max-width:990px) {
+    h1 {
+        font-size: 2.4em;
+    }
+    
+    /* Header */
+    header div.banner {
+        left: 56%;
+    }
+    
+    header div.banner h1 {
+        margin-bottom: 20px;
+    }
+    
+    /* Sections */
+    section.main aside {
+        font-size: 1em;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 1100px) {
+  .logo {
+    position: absolute;
+      height: 50px;
+    }
+    
+    nav ul {
+    text-align: center;
+    float: left;
+    text-align: center;
+    width: 75%;
+  }
+    
+     nav ul li {
+    padding 0;
+    margin: 0;
+      font-size: .8em;
+  }
+     h1 {
+        font-size: 2em;
+         padding: 40px 20px;
+    }
+    
+    h2 {
+    font-size: 1.5em;
+    }
+    
+    .main p {
+        padding: 0 20px;
+    }
+    
+}
+
+
+
+
+@media only screen and (max-width:700px) {
+    .logo {
+        height: 90px;
+        background: url(../images/logobug.png) no-repeat center 0;
+        width: 100px;
+        height: 70px;
+        background-size: contain;
+    }
+    
+  nav ul li {
+    width: 50%;
+    padding: 5px 0;
+    margin: 0;
+    font-size: .5em;
+      text-align: left;
+  }
+
+    #lodging {
+        background-position: center;
+        background-size: contain;
+        background-position: 0px 50px;
+        min-height: 150px;
+    }
+
+    h1, h2 {
+        font-size: 1.5em;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    h1 span {
+        font-size: 1em;
+    }
+    p {
+        font-size: 1em;
+        text-align: center;
+    }
+    
+    section aside p {
+        width: 90%;
+        float: left;
+        line-height: 1.5;
+        padding: 10px;
+    }
+
+    .hero {
+    min-height: 350px;
+    }
+    
+    
+        section aside h2 {
+        width: 100%;
+        float: center;
+        text-align: center;
+        padding: 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+
